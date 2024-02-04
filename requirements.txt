@@ -1,6 +1,8 @@
+python==3.9
 jupyter
 numpy
 pandas
+pyarrow
 seaborn
 matplotlib
 torch 
@@ -11,3 +13,4 @@ tqdm
 transformers
 scipy
 scikit-learn
+tensorflow
