@@ -13,3 +13,5 @@ transformers
 scipy
 scikit-learn
 tensorflow
+
+flask
