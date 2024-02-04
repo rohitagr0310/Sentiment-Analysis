@@ -1,0 +1,28 @@
+|-- VibeVerdict
+|   |-- .gitignore
+|   |-- README.md
+|   |-- app.py
+|   |-- directory_tree.txt
+|   |-- generate_tree.py
+|   |-- requirements.txt
+|   |-- sentiment_analysis_module
+|   |   |-- __init__.py
+|   |   |-- data
+|   |   |   |-- part_1.csv
+|   |   |   |-- part_10.csv
+|   |   |   |-- part_2.csv
+|   |   |   |-- part_3.csv
+|   |   |   |-- part_4.csv
+|   |   |   |-- part_5.csv
+|   |   |   |-- part_6.csv
+|   |   |   |-- part_7.csv
+|   |   |   |-- part_8.csv
+|   |   |   |-- part_9.csv
+|   |   |-- vibe_verdict_model.ipynb
+|   |-- static
+|   |   |-- scripts
+|   |   |   |-- main.js
+|   |   |-- styles
+|   |   |   |-- main.css
+|   |-- templates
+|   |   |-- index.html
