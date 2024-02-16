@@ -16,7 +16,7 @@ sent_pipeline = pipeline("sentiment-analysis")
 
 @app.route("/docs/<path:filename>")
 def serve_docs(filename):
-    return send_from_directory("docs/_build", filename)
+    return send_from_directory("docs/documentation", filename)
 
 
 class HelloWorld(Resource):
