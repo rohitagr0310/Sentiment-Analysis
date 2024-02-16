@@ -6,16 +6,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sentiment Analysis</title>
+    <link rel="stylesheet" type="text/css" href="./../static/styles/main.css" />
   </head>
   <body>
-    <h1>Sentiment Analysis</h1>
-
-    <!-- Add a link to the documentation -->
-    <p>
-      <a href="{{ url_for('serve_docs', filename='index.html') }}"
-        >Documentation</a
-      >
-    </p>
+    <header>
+      <nav class="header-nav">
+        <h1 class="header-title">Sentiment Analysis</h1>
+      </nav>
+      <p>
+        <a
+          href="{{ url_for('serve_docs', filename='index.html') }}"
+          class="header-link"
+          >Documentation</a
+        >
+      </p>
+    </header>
 
     <form method="post" action="{{ url_for('home') }}">
       <label for="text">Enter text for analysis:</label>
@@ -23,22 +28,35 @@
       <br />
       <input type="submit" value="Analyze" />
     </form>
-
-    {% if result %}
-    <h2>Analysis Result:</h2>
-    <p><strong>Pipeline Result:</strong></p>
-    <p><strong>Label:</strong> {{ result['pipeline_result']['label'] }}</p>
-    <p><strong>Score:</strong> {{ result['pipeline_result']['score'] }}</p>
-
-    <p><strong>VADER Result:</strong></p>
-    <p><strong>Neg:</strong> {{ result['vader_result']['neg'] }}</p>
-    <p><strong>Neu:</strong> {{ result['vader_result']['neu'] }}</p>
-    <p><strong>Pos:</strong> {{ result['vader_result']['pos'] }}</p>
-
-    <p><strong>Roberta Result:</strong></p>
-    <p><strong>Neg:</strong> {{ result['roberta_result']['neg'] }}</p>
-    <p><strong>Neu:</strong> {{ result['roberta_result']['neu'] }}</p>
-    <p><strong>Pos:</strong> {{ result['roberta_result']['pos'] }}</p>
-    {% endif %}
+    <nav>
+      {% if result %}
+      <h2>Analysis Result:</h2>
+      <div>
+        <p>{{ result['pipeline_result']['label'] }}</p>
+        <div class="dropdown">
+          <h2>More</h2>
+          <div class="dropdown-content">
+            <div>
+              <p>
+                <strong>Score:</strong> {{ result['pipeline_result']['score'] }}
+              </p>
+            </div>
+            <div>
+              <p><strong>VADER Result:</strong></p>
+              <p><strong>Neg:</strong> {{ result['vader_result']['neg'] }}</p>
+              <p><strong>Neu:</strong> {{ result['vader_result']['neu'] }}</p>
+              <p><strong>Pos:</strong> {{ result['vader_result']['pos'] }}</p>
+            </div>
+            <div>
+              <p><strong>Roberta Result:</strong></p>
+              <p><strong>Neg:</strong> {{ result['roberta_result']['neg'] }}</p>
+              <p><strong>Neu:</strong> {{ result['roberta_result']['neu'] }}</p>
+              <p><strong>Pos:</strong> {{ result['roberta_result']['pos'] }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </nav>
   </body>
 </html>
