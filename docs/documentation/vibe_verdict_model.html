@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>VibeVerdict Model Notebook &#8212; VibeVerdict  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Sentiment Analysis Module" href="sentiment_analysis_module.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="vibeverdict-model-notebook">
+<h1>VibeVerdict Model Notebook<a class="headerlink" href="#vibeverdict-model-notebook" title="Link to this heading">¶</a></h1>
+<p>This document provides an overview of the Jupyter Notebook <cite>vibe_verdict_model.ipynb</cite> which is used for training the sentiment analysis model in the VibeVerdict project.</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p>The <cite>vibe_verdict_model.ipynb</cite> Jupyter Notebook contains the code for training the sentiment analysis model using various tools and libraries such as nltk, transformers, and more.</p>
+</section>
+<section id="notebook-overview">
+<h2>Notebook Overview<a class="headerlink" href="#notebook-overview" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Data Loading and Exploration:</strong>
+- The notebook starts with loading and exploring the dataset (<cite>part_1.csv</cite> to <cite>part_10.csv</cite>).
+- Visualization of the count of reviews by stars.</p></li>
+<li><p><strong>Natural Language Processing (NLP) with NLTK:</strong>
+- Tokenization, POS tagging, and Named Entity Recognition (NER) using the Natural Language Toolkit (NLTK).
+- Sentiment analysis using the VADER sentiment intensity analyzer.
+- Visualization of sentiment analysis results.</p></li>
+<li><p><strong>Sentiment Analysis with Transformers:</strong>
+- Utilizing the Hugging Face Transformers library.
+- Loading the pre-trained sentiment analysis model (<cite>cardiffnlp/twitter-roberta-base-sentiment</cite>).
+- Running the model on an example text and displaying the scores.</p></li>
+<li><p><strong>Comparing NLTK and Transformers Results:</strong>
+- Iterating through the dataset to perform sentiment analysis with both NLTK and Transformers.
+- Creating a DataFrame with the results.</p></li>
+<li><p><strong>Visualization and Analysis:</strong>
+- Visualizing compound scores and individual sentiment scores.
+- Pair plot for exploring relationships between different sentiment scores.</p></li>
+<li><p><strong>Additional Sentiment Analysis:</strong>
+- Using the Transformers pipeline for sentiment analysis.</p></li>
+</ol>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+<p>To run the Jupyter Notebook and train the VibeVerdict sentiment analysis model, follow these steps:</p>
+<ol class="arabic simple">
+<li><p>Install the required dependencies mentioned in the <cite>requirements.txt</cite>.</p></li>
+<li><p>Open the Jupyter Notebook using a Jupyter environment.</p></li>
+<li><p>Execute each cell in the notebook sequentially.</p></li>
+</ol>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install required dependencies</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
+
+<span class="c1"># Open the Jupyter Notebook</span>
+<span class="n">jupyter</span> <span class="n">notebook</span>
+
+<span class="c1"># Execute each cell in the notebook</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">VibeVerdict</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Using Your Flask App</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Dependency Documentation for VibeVerdict</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sentiment_analysis_module.html">Sentiment Analysis Module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VibeVerdict Model Notebook</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notebook-overview">Notebook Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="sentiment_analysis_module.html" title="previous chapter">Sentiment Analysis Module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Vortex Team.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/vibe_verdict_model.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

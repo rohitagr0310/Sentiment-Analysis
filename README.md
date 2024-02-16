@@ -33,7 +33,7 @@ pip install -r requirements.txt
 For documentation updates, run the following command in the root directory:
 
 ```shell
-sphinx-build -b html docs docs/_build
+sphinx-build -b html docs docs/documentation
 ```
 
 ### 5. Run the Web Application
