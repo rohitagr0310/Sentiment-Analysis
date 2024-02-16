@@ -76,7 +76,7 @@ Running the Existing Test Script
    Expected Output:
 
    ::
-    
+
       [nltk_data] Downloading package punkt to
       [nltk_data]     C:\Users\rohit\AppData\Roaming\nltk_data...
       [nltk_data]   Package punkt is already up-to-date!
@@ -90,3 +90,18 @@ Running the Existing Test Script
       Tokens: ['NLTK', 'is', 'a', 'powerful', 'library', 'for', 'natural', 'language', 'processing', '.']
       POS Tags: [('NLTK', 'NNP'), ('is', 'VBZ'), ('a', 'DT'), ('powerful', 'JJ'), ('library', 'NN'), ('for', 'IN'), ('natural', 'JJ'), ('language', 'NN'), ('processing', 'NN'), ('.', '.')]
       Sentiment Scores: {'neg': 0.0, 'neu': 0.531, 'pos': 0.469, 'compound': 0.6486}
+
+
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="index.html">Go back to home page</a>
+   </div>
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="http://127.0.0.1:5000/">Go back to base URL</a>
+   </div>
+

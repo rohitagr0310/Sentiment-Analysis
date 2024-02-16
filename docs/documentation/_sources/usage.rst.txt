@@ -28,3 +28,18 @@ Usage
    - Click the "Analyze Sentiment" button.
 
    - The app will process the text and provide sentiment analysis results.
+
+
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="index.html">Go back to home page</a>
+   </div>
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="http://127.0.0.1:5000/">Go back to base URL</a>
+   </div>
+

@@ -57,3 +57,17 @@ To use the sentiment analysis module in your project:
     text = "This is a positive example."
     result = predict_sentiment(model, text)
     print(result)
+
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="index.html">Go back to home page</a>
+   </div>
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="http://127.0.0.1:5000/">Go back to base URL</a>
+   </div>
+

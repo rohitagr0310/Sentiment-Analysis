@@ -25,3 +25,17 @@ Introduction
 
 5. **Result Display:**
    - If analysis results are available (`result` exists), a section displays the pipeline, VADER, and Roberta model results.
+
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="index.html">Go back to home page</a>
+   </div>
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="http://127.0.0.1:5000/">Go back to base URL</a>
+   </div>
+

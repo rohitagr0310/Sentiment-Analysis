@@ -66,4 +66,17 @@ Suppose you have the following script in a file named `generate_directory_tree.p
 
 Run the script, and it will print a tree structure of your current working directory, excluding the specified directories.
 
-Adjust the script and documentation based on your specific requirements and directory structure.
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="index.html">Go back to home page</a>
+   </div>
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="http://127.0.0.1:5000/">Go back to base URL</a>
+   </div>
+
+

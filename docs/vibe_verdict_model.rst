@@ -55,3 +55,18 @@ To run the Jupyter Notebook and train the VibeVerdict sentiment analysis model, 
     jupyter notebook
 
     # Execute each cell in the notebook
+
+
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="index.html">Go back to home page</a>
+   </div>
+
+.. raw:: html
+
+   <div style="text-align: center;">
+       <a class="btn" href="http://127.0.0.1:5000/">Go back to base URL</a>
+   </div>
+
