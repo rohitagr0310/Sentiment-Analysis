@@ -40,7 +40,7 @@ sphinx-build -b html docs docs/documentation
 Now you can run the VibeVerdict web application:
 
 ```shell
-python myflaskapp.py
+python app.py
 ```
 
 The app will be accessible in your web browser at http://localhost:5000.
