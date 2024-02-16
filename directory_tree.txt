@@ -3,10 +3,48 @@
 |   |-- README.md
 |   |-- app.py
 |   |-- directory_tree.txt
+|   |-- docs
+|   |   |-- Makefile
+|   |   |-- _build
+|   |   |   |-- .buildinfo
+|   |   |   |-- .doctrees
+|   |   |   |   |-- environment.pickle
+|   |   |   |   |-- index.doctree
+|   |   |   |   |-- usage.doctree
+|   |   |   |-- _sources
+|   |   |   |   |-- index.rst.txt
+|   |   |   |   |-- usage.rst.txt
+|   |   |   |-- _static
+|   |   |   |   |-- alabaster.css
+|   |   |   |   |-- basic.css
+|   |   |   |   |-- custom.css
+|   |   |   |   |-- doctools.js
+|   |   |   |   |-- documentation_options.js
+|   |   |   |   |-- file.png
+|   |   |   |   |-- language_data.js
+|   |   |   |   |-- minus.png
+|   |   |   |   |-- plus.png
+|   |   |   |   |-- pygments.css
+|   |   |   |   |-- searchtools.js
+|   |   |   |   |-- sphinx_highlight.js
+|   |   |   |-- genindex.html
+|   |   |   |-- index.html
+|   |   |   |-- objects.inv
+|   |   |   |-- search.html
+|   |   |   |-- searchindex.js
+|   |   |   |-- usage.html
+|   |   |-- conf.py
+|   |   |-- index.rst
+|   |   |-- make.bat
+|   |   |-- usage.rst
 |   |-- generate_tree.py
 |   |-- requirements.txt
 |   |-- sentiment_analysis_module
 |   |   |-- __init__.py
+|   |   |-- __pycache__
+|   |   |   |-- __init__.cpython-312.pyc
+|   |   |   |-- sentiment_model.cpython-312.pyc
+|   |   |   |-- vibe_verdict_model.cpython-312.pyc
 |   |   |-- data
 |   |   |   |-- part_1.csv
 |   |   |   |-- part_10.csv
@@ -18,6 +56,7 @@
 |   |   |   |-- part_7.csv
 |   |   |   |-- part_8.csv
 |   |   |   |-- part_9.csv
+|   |   |-- sentiment_model.py
 |   |   |-- vibe_verdict_model.ipynb
 |   |-- static
 |   |   |-- scripts
