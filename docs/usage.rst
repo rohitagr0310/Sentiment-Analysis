@@ -19,9 +19,12 @@ Usage
 
 2. Access the app in your web browser at http://localhost:5000.
 
-Configuration
--------------
-Configure your app by editing the `config.py` file.
+3. Once the app is running, you can use the sentiment analysis feature:
 
-...
+   - Open the app in your web browser at http://localhost:5000.
+   
+   - You will see a text box where you can enter the text you want to analyze.
 
+   - Click the "Analyze Sentiment" button.
+
+   - The app will process the text and provide sentiment analysis results.
